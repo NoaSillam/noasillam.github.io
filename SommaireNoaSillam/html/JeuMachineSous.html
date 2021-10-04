@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../CSS/JeuMachineSous.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/JQuery 3.5.1.js"></script>
+   <script src="../js/libraryRoulette.js"></script>
+    <script type="text/javascript">
+        $
+        (
+            function()
+            {
+                
+                
+                $('#btnJouer').click(MachineSous);
+                
+                //$('#btnJouer').click(RetournerElement)
+                //$('#btnJouer').click(LesImages);
+              //  $('.image').css('text-align', 'center');
+              //  $('.image').css('justify-items', 'center');
+               // $('.image').css('align-items', 'center');
+                //$('.image').css('width', '180px');
+               // $('.machine').css('overflow', 'hidden');
+               // $('.image').css('display', 'flex');
+              //  $('.image').css('display', 'inline-block');
+               // $('.image').css('border', 'solid');
+               // $('.image').css('border-color', 'black');
+               // $('.image').css('height', '180px');
+               // $('.image').css('margin-right', 'auto');
+              // $('.image').css('margin-left', 'auto');
+                $('.image').css('margin-top', 'auto');
+                $('.image').css('margin-bottom', 'auto');
+               // $('.image').css('display', 'block');
+               $('ul').css('display', 'inline-block');
+                $('li').css('list-style-type', 'none');
+                //$('body').css
+                
+            }
+        );
+      
+ //var numMise = parseInt($('#numMise').val());
+//var cagnotteRecolter = parseInt($('#cagnotteRecolter').val());
+
+function MachineSous()
+{
+    var numMise = parseInt($('#numMise').val());
+    var cagnotteRecolter = parseInt($('#cagnotteRecolter').val());
+
+    if( $('#numMise').val() === "" || numMise > cagnotteRecolter || numMise < 1)
+    {
+        alert("Veuillez entrer une valeur correct !");
+    }
+    else
+    {
+        $('.machine ul').playSpin({
+            onFinish : function(){
+             
+                CalculerCagnotte();
+            }
+        })
+     }
+        
+}
+
+
+function CalculerCagnotte()
+{
+    if(($('#case1').css('top')) == ($('#case2').css('top')) && ($('#case2').css('top')) == ($('#case3').css('top')))
+    {
+        alert("jackpot");
+        $('#cagnotteRecolter').val(parseInt($('#cagnotteRecolter').val()) + parseInt(($('#numMise').val()))*5);
+    }
+    else if(($('#case1').css('top')) == ($('#case2').css('top')) || ($('#case2').css('top')) == ($('#case3').css('top')) || ($('#case1').css('top')) == ($('#case3').css('top')))
+    {
+        alert("Gagné!!!");
+        $('#cagnotteRecolter').val(parseInt($('#cagnotteRecolter').val()) + parseInt(($('#numMise').val()))*2);
+    }
+    else
+    {
+        alert("Perdu!!!");
+        $('#cagnotteRecolter').val(parseInt($('#cagnotteRecolter').val()) - parseInt(($('#numMise').val())));
+    }
+   
+}
+
+    </script>
+</head>
+<body>
+    <div id="centre">
+        
+        <h1>Jeu de la machine à sous</h1>
+        <br>
+        <br>
+        <div class="machine">
+        
+            <div id="aaa">
+            <ul id="case1">
+            <li><img src="../IMAGE/MachineASous/gateau1.jpeg" class="image" alt=""  ></li>
+            <li><img src="../IMAGE/MachineASous/gateau2.jpeg" class="image" alt="" ></li>
+            <li><img src="../IMAGE/MachineASous/gateau3.jpeg" class="image" alt="" ></li>
+            <li><img src="../IMAGE/MachineASous/gateau4.jpeg" class="image" alt=""></li>
+            <li><img src="../IMAGE/MachineASous/gateau5.jpeg" class="image" alt=""></li>
+            <li><img src="../IMAGE/MachineASous/gateau6.jpeg" class="image" alt="" ></li>
+        </ul>
+    </div>
+
+        
+    <div id="bbb">
+            <ul id="case2">
+                <li><img src="../IMAGE/MachineASous/gateau1.jpeg" class="image" alt="" ></li>
+            <li><img src="../IMAGE/MachineASous/gateau2.jpeg" class="image" alt="" ></li>
+            <li><img src="../IMAGE/MachineASous/gateau3.jpeg" class="image" alt="" ></li>
+            <li><img src="../IMAGE/MachineASous/gateau4.jpeg" class="image" alt="" ></li>
+            <li><img src="../IMAGE/MachineASous/gateau5.jpeg" class="image" alt="" ></li>
+            <li><img src="../IMAGE/MachineASous/gateau6.jpeg" class="image" alt="" ></li>
+            </ul>
+        </div>
+
+        <div id="ccc">
+            <ul id="case3">
+                <li><img src="../IMAGE/MachineASous/gateau1.jpeg" class="image" alt="" ></li>
+            <li><img src="../IMAGE/MachineASous/gateau2.jpeg" class="image" alt="" ></li>
+            <li><img src="../IMAGE/MachineASous/gateau3.jpeg" class="image" alt="" ></li>
+            <li><img src="../IMAGE/MachineASous/gateau4.jpeg" class="image" alt="" ></li>
+            <li><img src="../IMAGE/MachineASous/gateau5.jpeg" class="image" alt="" ></li>
+            <li><img src="../IMAGE/MachineASous/gateau6.jpeg" class="image" alt="" ></li>
+            </ul>
+        </div>
+    </div>
+        <br>
+        <br>
+        <br>
+        <div id="miseCagnotte">
+        <label for="">Votre mise</label>
+        <br>
+       <input type="number" id="numMise">
+       <br>
+       <br>
+       <label for="">Votre cagnotte</label>
+       <br>
+       <input type="number" id="cagnotteRecolter" value="50" disabled>
+       <br>
+       <br>
+
+        <input type="button" id="btnJouer" value="Jouer" width="500px" height="20px">
+        </div>
+    </div>
+</body>
+</html> 

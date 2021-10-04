@@ -1,0 +1,118 @@
+body
+{
+background-image: url(../Image/memory3/fond.jpg);
+width: 100%;
+height: 100%;
+background-size: 100% 100%;
+}
+h1
+{
+    font-size: 40px;
+    font-family: cursive;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+	color: red;
+}
+#memory
+{
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+#jeuComplet
+{
+	text-align: center;
+    align-items: center;
+    justify-items: center;
+	margin-left: 36%;
+	margin-right: 36%;
+}
+#rejouer
+{
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+img
+{
+    height: 140px;
+    width: 100px;
+    border-radius: 15px;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    position: relative;
+   /* animation-name: tourner;
+    animation-iteration-count: 2;*/
+}
+table{
+border: 10px;
+border-color: black;
+animation-name: tableau;
+animation-duration: 3s;
+animation-fill-mode: forwards;
+position: relative;
+text-align: center;
+align-items: center;
+justify-items: center;
+}
+
+@keyframes tableau
+{
+	0%{left: -700px}
+	0%{top: 0px}
+	100%{left: 0px} 
+	100%{top: 0px}
+} 
+/*@keyframes tourner
+{
+	from
+	{
+		transform: rotateY(0deg);
+	}
+	to
+	{
+		transform: rotateY(360deg);
+	}
+}*/
+#gauche
+{
+	float: left;
+	margin-top: -400px;
+	width: 400px;
+	height: 400px;
+}
+input
+{
+    width: 300px;
+    height: 40px;
+	border-radius: 20px;
+	border: solid;
+	border: black;
+	background-color: gold;
+    font-size: 25px;
+    font-family: cursive;
+}
+#niveau
+{
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+#nbEssaies
+{
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+#timer
+{
+    font-size: 100px;
+    font-family: cursive;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
