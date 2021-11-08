@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>OnePager</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="./style.css">
+
+
+</head>
+<body>
+<div id="milieu">
+  <!-- wrapper -->
+  <div id="menu">
+    <!-- the  sidebar -->
+    <!-- logo -->
+ 
+    <!-- navigation menu -->
+ 
+    <ul class="dropdownmenu">
+        <li><a href="#accueil"><b style="font-size: 20Px;">Accueil</b></a></li>
+        <li><a href="#curriculumVitae"><b style="font-size: 20px;">Curriculum Vitae</b></a></li>
+        <li><a href="#portfolio"><b style="font-size: 20px;">Portfolio</b></a>
+            <ul>
+                <li><a href="../SommaireNoaSillam/html/Sommaire.html"><b style="font-size: 20px;">Projet Casino</b></a></li>
+                <li><a href=""><b style="font-size: 20px;">Projet Lafleur</b></a></li>
+                <li><a href="./projetStage1.html"><b style="font-size: 12px;">Projet Stage de 1 ere année</b></a></li>
+                <li><a href="#">projet GSB1</a></li>
+                <li><a href="#">projet GSB2</a></li>
+            </ul>
+        </li>
+        <li><a href="#tableau"><b style="font-size: 14px;">Tableau de Competence</b></a></li>
+       
+    </ul>
+
+   
+  </div>
+  
+
+  <div id="container">
+    <!-- page container -->
+    <div class="page" id="accueil">
+      <!-- page home -->
+      <div class="page_content">
+        <div class="gf-slider">
+
+
+          <img src='./lesJeux.png' width="650px" height="400px" style="display: block;">
+          <img src='./lafleur.png' width="650px"  height="400px" style="display: none;" >
+          <img src='./gsb.png' width="650px"  height="400px" style="display: none;" >
+       
+     <script type="text/javascript">
+          I = 0 ;
+          Imax = document.images.length - 1 ;
+          setTimeout(suivante, 2000) ;
+         
+          function suivante()
+          {
+          document.images[I].style.display = "none" ;
+          if ( I < Imax )
+               I++;
+          else
+               I=0;    
+          document.images[I].style.display = "block";
+          setTimeout(suivante, 2000) ;
+          }
+     </script>
+          <!-- slider -->
+         
+        </div>
+        <div class="space"> </div>
+        <div class="clear"> </div>
+        <!-- services -->
+        
+        
+        
+       
+        
+       
+        <div class="clear"> </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>
+      <p>Bonjour, je m'appelle Noa Sillam. Actuellement je suis en 2 eme année de BTS SIO option SLAM au lycée ORT DANIEL MAYER à Montreuil.
+        J'ai choisie l'option SLAM pour me specialiser dans le domaine du developpement web et des logiciels. 
+        Vous pouvez découvrir mon CV et les projets réaliser durant ces 2 années d'études ci-dessous.</p>
+    </div>
+    <div class="page" id="curriculumVitae">
+      <!-- page about -->
+     
+      <h1 class="page_title" style="font-size: 35px; padding-left: 2%;"> Curriculum Vitae</h1>
+      <h2 style="font-size: 30px; padding-left: 2%;">Noa Sillam</h2>
+      <h3 style="font-size: 25px; padding-left: 2%;">recherche de stage en developpement web</h3>
+      <br>
+      <div style="padding-left: 10%; color: white;">
+      <p>16 ter rue etienne marcel, 93500, Pantin
+        <br>
+        07 50 26 61 66 |  noasillam@gmail.com
+        <br>
+        Age: 20 ans | Natonalité: Francaise | telephone domicile : 01 48 44 22 94
+      </p>
+      <hr>
+      <h4 style="font-size: 30px; color: black;"><b>Profil professionnel</b></h4>
+      <p> Etudiante motivee en informatique, je bénéficie d'une experience pratique dans la réalisation d'activités 
+        acquises au cours de divers stages et formations. Dotée d'une grande capacitéd'adaptatin, je sais me 
+        montrer motivée et digne de confiance dans la réalisationde mes missions.</p>
+        <hr>
+        <h4 style="font-size: 30px; color: black;"><b>Parcours professionnel</b></h4>
+        <p style="font-size: 25px;">L'institiut du canal</p>
+        <p >stagiaire | Pantin | stage | mai 2021 à juin 2021
+          <br>
+        creation d'un site internet en HTML, CSS3, JS</p>
+        <br>
+        <br>
+        <p style="font-size: 25px;">creche Ozar Hatorah</p>
+        <p>stagiaire | Paris | stage | decembre 2015 à janvier 2016
+          <br>
+        surveillance des enfants, activités, ect...</p>
+        <br>
+        <br>
+        <p style="font-size: 25px;">Chez des particuliers</p>
+        <p >cours de mathématiques | Paris</p>
+        <hr>
+
+        <h4 style="font-size: 30px; color: black;"><b>Compétences</b></h4>
+        <div id="competence" >
+        <ul>
+          <li class="liste">PHP</li>
+          <li class="liste">HTML5</li>
+          <li class="liste">SQL</li>
+          <li class="liste">jQuery</li>
+          <li class="liste">CSS3</li>
+          <li class="liste">JAVA</li>
+          <li class="liste">Python</li>
+          <li class="liste">SQL</li>
+        </ul>
+      </div>
+        <hr>
+        <h4 style="font-size: 30px; color: black;"><b>Formation : </b></h4>
+        <p style="font-size: 20px;">BTS SIO SLAM informatique</p>
+        <p>Ort Daniel Mayer
+          <br>
+        Montreuil, 93 | Septembre202-En cours</p>
+        <br>
+        <br>
+        <p style="font-size: 20px;">MOOC DE LA CNIL, informatique</p>
+        <p>CNIL
+          <br>
+        Montreuil, 93 | Avril 2021 - Mai 2021</p>
+        <br>
+        <br>
+        <p style="font-size: 20px;">CERTIFICATION CISCO, informatique</p>
+        <p>CISCO
+        <br>
+      Montreuil | Septembre 2020 - Mai 2021</p>
+      <br>
+      <br>
+      <p style="font-size: 20px;">BACCALAUREAT, Scientifique</p>
+        <p>Ozar Hatorah
+        <br>
+      Paris | Septembre 2018 - Juillet 2019</p>
+      <br>
+      <br>
+      <hr>
+    
+      <h4 style="font-size: 30px; color: black;"><b>Langues</b></h4>
+     <p style="font-size: 15px;">Anglais: intermediaires(B1)
+      <br>
+                                 Espagnol: intermediaire(B1)</p> 
+                                 <br>
+                                 <hr>
+      <h4 style="font-size: 30px; color: black;"><b>Centres d'interet</b></h4>
+      <p>Patisserie</p>
+      <br>
+      <br>
+
+    </div>
+    </div>
+    <div class="page" id="portfolio">
+      <!-- page portfolio -->
+      <h1 style="padding-left: 2%;" class="page_title"> Portfolio</h1>
+      <div class="page_content">
+        <p style="padding-left: 2%;">Durant mes deux années d'études, j'ai pu réaliser plusieurs projets vue en formation et en stages. Notamment :</p>
+        <br>
+        <br>
+        <div class="gauchePremiere">
+            <h2> Projet Casino</h2>
+            <img src="./lesJeux.png" width="250px" height="150px" alt="">
+          <p>Ce projet a etait réaliser durant ma premiere année de BTS SIO. Pour ce projet, nous avions un document word dans lequel nous avions des explications general pour pouvoir faire les trois jeux.
+            Le but de ce document word etait de nous donner une fonction c'est à dire ce que faisait les jeux et quelle resultat il donner.
+            Par la suite nous pouvions alors le personnalisé.
+            Nous devions le réaliser en html, css et js.
+            C'était un projet a effectuer en équipe de 2.
+        </p>  <br>
+        <br>
+        <button onclick="window.location.href = '../SommaireNoaSillam/html/Sommaire.html'" >Projet Casino</button>
+       
+        </div>
+        <div class="droitePremiere">
+            <h2>Projet du stage de premiere année </h2>
+            <img src="" alt="">
+            <p>Ce projet a etait réaliser durant mom stage de premiere année de BTS SIO. Pour ce projet, le dirigeant du l'entreprise m'a donner
+                 un document pour pouvoir effectuer leur site internet qui presente les service que l'entreprise propose.
+                Le but etait que grace a ce document, j'i pu etudiait l'entreprise et ainsi identifier et presenter les services qu'il proposer.
+                Le projet a etait réaliser en html, css et js car l'entreprise souhaiter un site vitrine.
+                J'ai effectuer ce projet toute seule.
+            </p>  <br>
+            <br>
+            <button onclick="window.location.href = './projetStage1.html'" >Projet Stage 1ere année</button>
+            <a href="./projetStage1.html"></a>
+        </div>
+        <div class="gaucheDeuxieme">
+            <h2> Projet Lafleur</h2>
+            <img src="./lafleur.png" width="250px" height="150px" alt="">
+          <p>Ce projet a etait réaliser durant le debut de ma deuxieme année de BTS SIO. Pour ce projet, nous avions un projet préalablement 
+              fournis dans lequel il fallait faire des modifications ou ajouter de nouvelle fonctionnalitées au projet.
+            Le but de ce projet etant de savoir s'adapter avec un code fait par quelqu'un d'autre.
+            Nous devions le réaliser en html, css, js, PHP et SQL.
+           
+        </p>  <br>
+        <br>
+        
+        
+       
+
+        
+       
+        </div>
+        <br>
+        <br>
+        <div class="droiteDeuxieme">
+            <h2> Projet GSB1</h2>
+            <img src="./gsb.png" width="250px" height="150px" alt="">
+          <p>Ce projet a etait réaliser durant ma deuxieme année de BTS SIO. Pour ce projet, nous avions un document word dans lequel nous avions des 
+              explications general sur ce que faisait chaques fonctionnalitées et ou on pouvais faire un choix entre plusieurs fonctionnalitées proposer pour faire l'application.
+            Le but de ce document word etait de nous donner une fonction c'est à dire ce que faisait l'application en fonction du choix de la fonctionnalité.
+            Par la suite nous pouvions alors le personnalisé et ajouter une fonction.
+            Nous devions le projet réaliser en java et en sql.
+            C'était un projet a effectuer en équipe de 2 ou 3.
+        </p>  <br>
+        <br>
+        <button onclick="window.location.href = ''" >Projet GSB1</button>
+       
+        </div>
+
+
+          
+      </div>
+    </div>
+  
+    <div class="page" id="tableau">
+      <!-- page skills -->
+      
+     <h1>Tableau de Competence</h1>
+     
+     
+     <embed src="./tableauCompetence (1).pdf" width=102% height=500px  />
+   
+    </div>  
+      
+      
+
+</body>
+</html>
