@@ -1,3 +1,8 @@
+
+
+
+
+
 var miseDepart = parseInt($('#numMise').val());
 var cagnotteRecolter = parseInt($('#cagnotte').val());
 
@@ -23,30 +28,7 @@ function MachineSous()
 
 function CalculerCagnotte()
 {
-   /* var compter = (s, c) => s.split(c).length - 1;
-    var gain = (jeu)=>
-    {
-        if(compter(jeu, 'image1') == 2 || compter(jeu, 'image2') == 2 || compter(jeu, 'image3') == 2 || compter(jeu, 'image4') == 2 || compter(jeu, 'image5') == 2)
-        {
-            return 2*miseDepart;
-        }
-        else
-        {
-            if(compter(jeu, 'image1') == 3 || compter(jeu, 'image2') == 3 || compter(jeu, 'image3') == 3 || compter(jeu, 'image4') == 3 || compter(jeu, 'image5') == 3)
-            {
-                return 5*miseDepart;
-            }
-            else
-            {
-                if(compter(jeu, 'image1') == 1 || compter(jeu, 'image2') == 1 || compter(jeu, 'image3') == 1 || compter(jeu, 'image4') == 1 || compter(jeu, 'image5') == 1)
-                {
-                    return -miseDepart;
-                }
-            }
-        }
-        
-
-    }*/
+   
 
     if(($('#case1').css('top')) == ($('#case2').css('top')) && ($('#case2').css('top')) == ($('#case3').css('top')))
     {
