@@ -14,7 +14,7 @@ body {
     margin: 0 auto;
 }
 
-h1,
+
 h2,
 h3,
 h4,
@@ -760,10 +760,10 @@ header .fa {
 
 .footer-copyright {
     position: relative;
-    background-image: url("../images/footer-bg.jpg");
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
+    width: 100%;
 }
 
 .footer-copyright p {
@@ -2723,7 +2723,7 @@ textarea.form-control {
     }
 }
 .sous-titre{
-    width: 360px;
+    width: 50%;
     height: 50px;
     font-size: 30px;
     text-align: center;
@@ -2734,5 +2734,32 @@ textarea.form-control {
 .milieu
 {
     display: block;
+}
+.images
+{
+    width: 122%;
+    height: 103%;
+
+}
+.image{
+    width: 120%;
+    height: 100%;
+}
+.titre{
+    font-family:fantasy;
+    font-weight: bolder;
+    font-size: 70px;
+    text-align: center;
+
+}
+
+#redimentionner{
+
+    width : 25%;
+    height : 25%;
+}
+.imgs{
+    width: 33%;
+    height: 330px;
 }
 
