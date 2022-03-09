@@ -2722,44 +2722,5 @@ textarea.form-control {
         font-size: 23px;
     }
 }
-.sous-titre{
-    width: 50%;
-    height: 50px;
-    font-size: 30px;
-    text-align: center;
-    font-family: cursive;
-    background-color: #000;
-    color: white;
-}
-.milieu
-{
-    display: block;
-}
-.images
-{
-    width: 122%;
-    height: 103%;
 
-}
-.image{
-    width: 120%;
-    height: 100%;
-}
-.titre{
-    font-family:fantasy;
-    font-weight: bolder;
-    font-size: 70px;
-    text-align: center;
-
-}
-
-#redimentionner{
-
-    width : 25%;
-    height : 25%;
-}
-.imgs{
-    width: 33%;
-    height: 330px;
-}
 

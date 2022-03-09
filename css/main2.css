@@ -35,6 +35,11 @@
     height : 25%;
 }
 .imgs{
-    width: 33%;
-    height: 330px;
+    width: 300%;
+    height: 400px;
+    padding-right: 200%;
+}
+.imgss{
+    width: 50%;
+    height: 400px;
 }
