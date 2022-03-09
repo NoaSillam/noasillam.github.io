@@ -40,6 +40,11 @@
     padding-right: 200%;
 }
 .imgss{
-    width: 50%;
+    width: 100%;
     height: 400px;
+}
+.imgsss{
+    width: 200%;
+    height: 400px;
+    padding-right: 100%;
 }
