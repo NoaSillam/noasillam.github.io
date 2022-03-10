@@ -48,3 +48,9 @@
     height: 400px;
     padding-right: 100%;
 }
+.centrer
+{
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+}
