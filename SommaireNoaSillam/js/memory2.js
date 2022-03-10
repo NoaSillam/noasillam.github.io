@@ -23,14 +23,14 @@ function Recharger(noCarte)
     switch(departCarte[noCarte])
     {
         case 0: //fond de carte
-                $('img')[noCarte].src = "../Image/memory2/fondBonbon.jpg";
-                $('img')[noCarte].src = "../Image/memory2/fondBonbon.jpg";
+                $('img')[noCarte].src = "../image/memory2/fondBonbon.jpg";
+                $('img')[noCarte].src = "../image/memory2/fondBonbon.jpg";
                 break;
         case 1: //carte retourner
-                $('img')[noCarte].src = "../Image/memory2/bonbon"+image[noCarte]+".jpg";
+                $('img')[noCarte].src = "../image/memory2/bonbon"+image[noCarte]+".jpg";
                 break;
         case -1: //enlever la paire trouver
-                $('img')[noCarte].src = "../Image/memory2/gagner.jpg";
+                $('img')[noCarte].src = "../image/memory2/gagner.jpg";
                 break;
     }
 
